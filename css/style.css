@@ -1,0 +1,52 @@
+/* paragraphes */
+/* L'alignement ne fonctionne que sur des balises de type block : <p>, <div>, <h1>…
+
+Aligner le texte d'une balise inline, comme  <span>,  <a>,  <em> ,  <strong> */
+p {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font: size 2em;
+    ;
+    font-style: italic;
+
+
+}
+
+/* titres */
+h1 {
+    font-family: "lobster", cursive;
+    font-size: 3em;
+    text-align: center;
+    color: aqua;
+    background-color: azure;
+    background-image: url(../img/ppp.jpeg);
+padding: 150px;
+background-attachment: fixed;
+
+}
+/* ou background-size:cover; pour redimensionner l'image afin qu'elle s'adapte à la taille de lélément; background-position: top ou bottom ou left ou right ou center en valeur pour placer l'image https://developer.mozilla.org/fr/*/
+.introduction {
+
+    font-weight: 700;
+    text-decoration: underline;
+
+}
+
+/* color picket  */
+/* rgb (trois valeurs) rgba(4 valeurs, la quatrième indique le degré d'opacité en em ex: 0.5 em */
+/* appliquer au corps de texte la couleur de fond à partir du body  */
+
+body {
+    background-color: bisque;
+}
+
+/* ajouter une image en arrière plan Body{background-image */
+/*  La propriété CSS opacity  permet d'indiquer le niveau d'opacité (c'est l'inverse de la transparence)uste rendre la couleur de fond transparente, utilisez plutôt la notation RGBA*/
+    /* créer des dégradés background: linear-gradient(90deg, #8360c3, #2ebf91);"J'applique un dégradé linéaire, à 90 degrés, en partant de la couleur  #8360c3  pour arriver à la couleur  #2ebf91.https://uigradients.com/#DeepSeaSpace https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061312-ajoutez-de-la-couleur-et-un-fond#/id/r-8040580 */
+    .demo-border{
+border:2px solid coral
+
+
+
+    }
+
+   

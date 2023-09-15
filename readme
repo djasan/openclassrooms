@@ -1,0 +1,302 @@
+  /*  solid; double; doted; dashed */
+    /*     border-top  : bordure du haut.
+
+    border-bottom  : bordure du bas.
+
+    border-left  : bordure de gauche.
+
+    border-right  : bordure de droite.border-top-width  pour modifier l'épaisseur de la bordure du haut,
+
+border-top-color  pour la couleur du haut, ex:faire une compilation  .element {
+    border-top: 3px #EB5353 dotted;
+    border-right: 3px #F9D923 double;
+    border-bottom: 3px #36AE7C dashed;
+    border-left: 3px #187498 solid;  
+} https://codepen.io/nicolaspatschkowski/pen/RwygxBx?editors=1100*/
+/* La propriété CSS border-radius permet d'arrondir les angles de n'importe quel élément. Il suffit d'indiquer la taille de l'arrondi en pixels  ex:  .element {
+    font-size: 25px;
+    background-color: skyblue;
+    border-radius: 10px;
+    padding: 100px;
+} https://getbootstrap.com/docs/4.0/components/button-group/
+
+quatre valeurs correspondant aux angles dans la propriété  border-radius  , dans cet ordre :
+
+    En haut à gauche.
+
+    En haut à droite.
+
+    En bas à droite.
+
+    En bas à gauche.
+    
+    créer des courbes elliptiques avec  border-radius
+    indiquer deux valeurs séparées par une barre oblique (slash) :  /
+    ou avec https://9elements.github.io/fancy-border-radius/
+    
+    cliquer sur "copy" pour reporter la valeur du border-radius générée automatiquement (sans oublier le point virgule  ;  à la fin de la ligne) dans notre code :
+    .element {
+    font-size: 25px;
+    background-color: skyblue;
+    border-radius: 30% 70% 70% 30% / 30% 58% 42% 70%;
+    padding: 100px;
+}
+pour faire des éléments (boutons, encarts, blocs… */
+
+/*  la propriété CSS box-shadow  s'applique à tout le bloc, et prend quatre valeurs dans l'ordre suivant :
+
+    Le décalage horizontal de l'ombre.
+
+    Le décalage vertical de l'ombre.
+
+    L'adoucissement du dégradé.
+
+    La couleur de l'ombre. 
+    
+   L'adoucissement peut être :
+
+    faible (si on lui donne une valeur inférieure à celle du décalage),
+
+    normal (si on lui donne une valeur égale à celle du décalage)
+
+    ou élevé (si on lui donne une valeur supérieure à celle du décalage).
+    .element {
+    font-size: 25px;
+    background-color: skyblue;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0);
+    padding: 100px; 
+
+    adoucissement avec la propriété  box-shadow
+    .element {
+    font-size: 25px;
+    background-color: skyblue;
+    border-radius: 10px;
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+    padding: 100px;
+}
+
+ https://shadows.brumm.af/
+  
+ vous inspirer des exemples listés sur CSS Scan.
+ */
+ /* text-shadow permet d'ajouter une ombre sur les lettres de votre texte. Effet vintage garanti !
+
+Les valeurs fonctionnent exactement de la même façon que  box-shadow :
+
+    décalage horizontal,
+
+    décalage vertical,
+
+    adoucissement,
+
+    et couleur.
+
+    h1 {
+    font-size: 50px;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+    padding: 100px;
+} */
+
+/* Les pseudo-classes viennent s'ajouter à un sélecteur CSS pour décrire à quel moment un style en particulier doit s'appliquer. */
+/*stylisez un élément au survol de la souris avec :hover
+
+La pseudo-classe :hover s'applique lorsque l'utilisateur survole un élément avec sa souris (:hover  signifie d'ailleurs “survoler”), et va nous permettre d'y appliquer un style.  */
+
+/* pseudo-classe :hover s'applique lorsque l'utilisateur survole un élément avec sa souris (:hover  signifie d'ailleurs “survoler”), et va nous permettre d'y appliquer un style. */
+ /* Déclarez le sélecteur sur lequel le style va s'appliquer */
+
+/* Prenons un exemple où on applique du style sur les liens hypertextes. Pour déclarer un style qui va "s'activer" dès que le visiteur du site web va pointer la souris dessus, on doit écrire notre CSS comme ceci 
+ a:hover {
+// Insérer ici les propriétés CSS à appliquer
+}
+ un lien hypertexte, avec une balise  <a>  . On pourrait très bien appliquer un style au survol d'un paragraphe (on écrirait alors p:hover), ou bien d'un élément auquel on a attribué une classe ma-classe (et on écrirait .ma-classe:hover).
+
+À partir de là, c'est à vous de définir l'apparence que doivent avoir les liens lorsqu'on pointe dessus. Laissez libre cours à votre imagination, il n'y a pas de limite.
+Définissez le style qui va s'appliquer au sélecteur
+
+Dans le bout de code ci-dessous, on va appliquer une couleur différente pour le titre, le paragraphe, et à l'élément de la classe  mon-element .
+
+On a la structure suivante en HTML :
+
+<body>
+
+    <div class="mon-element">
+
+    <h1>Ma page de pseudo-classes</h1>
+
+    <p>Les pseudo-classes sont très importantes afin de créer des apparences dynamiques en fonction des interactions avec les utilisateurs.</p>
+
+    </div>
+
+</body>
+
+…et le code suivant en CSS :
+
+.mon-element:hover {
+
+    background-color: #BEAEE2;
+
+    color: white;
+
+}
+
+
+h1:hover {
+
+    color: #CDF0EA;
+
+}
+
+
+p:hover {
+
+    color: #F9CEEE;
+
+}
+
+
+https://openclassrooms.com/fr/courses/5919246-creez-des-animations-css-modernes  */
+
+
+/* la pseudo-classe  :active  permet d'appliquer un style particulier au moment du clic.
+
+  le changement intervient lorsque le bouton de la souris est enfoncé */
+/*  changer la couleur de fond du lien hypertexte lorsque l'on clique dessus. Pour l'occasion, on aura au préalable ajouté un lien hypertexte dans le bout de code HTML plus haut, et désactivé le changement de style de  mon-element  au  hover.
+
+On écrit dans le fichier CSS :
+
+a:active {
+
+    background-color: #C1FFD7;
+
+}
+ 
+différent. La pseudo-classe  :focus  applique un style lorsque l'élément est sélectionné.
+utiliser la touche "tab" ⇥   du clavier pour déclencher le focus sur chacun des éléments.
+  a:focus {
+    background-color: #FCFFA6;
+}  
+la pseudo-classe  :visited
+
+on peut changer ; même si, en pratique, sur les liens consultés, on ne change souvent pas grand-chose à part la couleur.
+
+Si vous ne souhaitez pas que les liens déjà visités soient colorés d'une façon différente qu'un lien hypertexte non cliqués, il vous faudra leur appliquer la même couleur qu'aux liens normaux
+a:visited {
+    color: black;
+}
+La couleur est désormais la même, que le lien ait été visité ou non
+https://caniuse.com/
+*/
+/* sélecteur universel  *
+
+Le sélecteur universel  *  sélectionne toutes les balises sans exception. 
+* {
+/* Insérez ici votre style */
+/*} 
+
+
+
+
+    "Applique ce style à toutes les balises  <em>  situées à l'intérieur d'une balise  <h3>  ".
+
+Notez qu'il n'y a pas de virgule entre les deux noms de balises.
+Le sélecteur d'une balise qui en suit une autre : A  +  B
+
+Dans CSS, on écrirait par exemple :
+
+h3 + p {
+
+/* Insérez ici votre style */
+
+}
+
+Ce qui aura pour résultat de sélectionner la première balise  <p>  située après un titre  <h3>.
+
+Exemple de code HTML associé :
+
+<h3>Titre</h3>
+
+<p>Paragraphe</p>
+
+Le sélecteur d'une balise qui possède un attribut : a[attribut]
+
+a[title] {
+
+/* Insérez ici votre style */
+
+}
+
+En français, ce morceau de code signifie :
+
+    "Sélectionne tous les liens hypertexte   <a>  qui possèdent un attribut  title  ".
+
+Exemple de code HTML associé :
+
+<a href="http://site.com" title="Infobulle">
+
+Il existe des variantes de cette forme de sélecteur :
+
+    a[attribut="Valeur"]  : une balise qui possède un attribut et une valeur exacte, comme :
+
+a[title="Cliquez ici"] {
+
+/* Insérez ici votre style */
+
+}
+
+C'est la même chose, mais l'attribut doit en plus avoir exactement pour valeur “Cliquez ici”.
+
+Exemple de code HTML associé :
+
+<a href="http://site.com" title="Cliquez ici">
+
+    a[attribut*="Valeur"]  : une balise, un attribut et une valeur, comme :
+
+a[title*="ici"] {
+
+/* Insérez ici votre style */  
+/*
+}
+
+Idem, l'attribut doit cette fois contenir dans sa valeur le mot “ici” (peu importe sa position).
+
+Exemple de code HTML associé :
+
+<a href="http://site.com" title="Quelque part par ici">*/
+ 
+
+/* code HTML associé :
+
+<a href="http://site.com" title="Infobulle">
+
+Il existe des variantes de cette forme de sélecteur :
+
+    a[attribut="Valeur"]  : une balise qui possède un attribut et une valeur exacte, comme :
+
+a[title="Cliquez ici"] {
+
+/* Insérez ici votre style */
+
+}
+
+C'est la même chose, mais l'attribut doit en plus avoir exactement pour valeur “Cliquez ici”.
+
+Exemple de code HTML associé :
+
+<a href="http://site.com" title="Cliquez ici">
+
+    a[attribut*="Valeur"]  : une balise, un attribut et une valeur, comme :
+
+a[title*="ici"] {
+
+/* Insérez ici votre style */
+
+}
+
+Idem, l'attribut doit cette fois contenir dans sa valeur le mot “ici” (peu importe sa position).
+
+Exemple de code HTML associé :
+
+<a href="http://site.com" title="Quelque part par ici">
+ */
